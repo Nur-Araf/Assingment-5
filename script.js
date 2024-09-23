@@ -58,6 +58,7 @@ function validAmount(inputId) {
   return donationAmount;
 }
 
+
 function updateBalances(donationAmount, balanceId) {
   totalBalance -= donationAmount;
   let balanceElement = document.getElementById(balanceId);
@@ -112,9 +113,36 @@ function aidUpdateBalances() {
 }
 
 
+function handleNouaBtn() {
+  if (validAmount("noakhaliInput")) {
+    noakhaliUpdateBalances();
+    my_modal_1.showModal();
+  } else {
+    document.getElementById("noakhaliInput").value = "";
+  }
+}
+
+function handleFeniBtn() {
+  if (validAmount("feniInput")) {
+    feniUpdateBalances();
+    my_modal_1.showModal();
+  } else {
+    document.getElementById("feniInput").value = "";
+  }
+}
+
+function handleAidBtn() {
+  if (validAmount("aidInput")) {
+    aidUpdateBalances();
+    my_modal_1.showModal();
+  } else {
+    document.getElementById("aidInput").value = "";
+  }
+}
+
 // ------ Add Event Listener ----- //
-document
-  .getElementById("btn")
-  .addEventListener("click", noakhaliUpdateBalances);
-document.getElementById("btn-1").addEventListener("click", feniUpdateBalances);
-document.getElementById("btn-2").addEventListener("click", aidUpdateBalances);
+//  document
+//   .getElementById("btn")
+//    .addEventListener("click", noakhaliUpdateBalances);
+// document.getElementById("btn-1").addEventListener("click", feniUpdateBalances);
+// document.getElementById("btn-2").addEventListener("click", aidUpdateBalances);
