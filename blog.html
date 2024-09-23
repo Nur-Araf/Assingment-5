@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
@@ -10,11 +10,15 @@
       type="text/css"
     />
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@material-tailwind/html@latest/styles/material-tailwind.css"
+    />
+    <script src="https://unpkg.com/@material-tailwind/html@latest/scripts/script-name.js"></script>
     <title>blog</title>
-</head>
-<body class="lexend">
-    <nav class="sticky top-0 z-50"></nav>
+  </head>
+  <body class="lexend">
+    <nav class="sticky top-0 z-50">
       <div
         class="flex items-center justify-between md:px-36 px-8 py-6 bg-[#F9F7F3]"
       >
@@ -27,7 +31,11 @@
         </div>
         <div class="flex items-center">
           <img src="assets/logo.png" alt="Logo" />
-          <h1 class="ml-2 font-semibold text-xl">Donate Bangladesh</h1>
+          <a
+            class="ml-2 font-semibold text-xl cursor-pointer"
+            href="/index.html"
+            >Donate Bangladesh</a
+          >
         </div>
         <div class="flex items-center">
           <img src="assets/coin.png" alt="coin" />
@@ -37,5 +45,140 @@
         </div>
       </div>
     </nav>
-</body>
+
+    <section class="p-1 md:px-36 px-8 mb-10 pb-4 mt-5 pt-5">
+      <h1 class="font-extrabold text-2xl mb-2 pb-2">Important FAQ</h1>
+      <div class="border-b border-slate-200">
+        <button
+          onclick="toggleAccordion(1)"
+          class="w-full flex justify-between items-center py-5 text-slate-800"
+        >
+          <span>What is the Document Object Model (DOM)?</span>
+          <span
+            id="icon-1"
+            class="text-slate-800 transition-transform duration-300"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 16 16"
+              fill="currentColor"
+              class="w-4 h-4"
+            >
+              <path
+                d="M8.75 3.75a.75.75 0 0 0-1.5 0v3.5h-3.5a.75.75 0 0 0 0 1.5h3.5v3.5a.75.75 0 0 0 1.5 0v-3.5h3.5a.75.75 0 0 0 0-1.5h-3.5v-3.5Z"
+              />
+            </svg>
+          </span>
+        </button>
+        <div
+          id="content-1"
+          class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out"
+        >
+          <div class="pb-5 text-sm text-slate-500">
+            The Document Object Model (DOM) is a programming interface that represents an HTML document as a tree structure of nodes. It allows JavaScript to access and manipulate the structure, style, and content of an HTML document. This enables dynamic web page content and interactive user experiences.
+          </div>
+        </div>
+      </div>
+
+      <!-- Accordion Item 2 -->
+      <div class="border-b border-slate-200">
+        <button
+          onclick="toggleAccordion(2)"
+          class="w-full flex justify-between items-center py-5 text-slate-800"
+        >
+          <span>How do you select an element from DOM?</span>
+          <span
+            id="icon-2"
+            class="text-slate-800 transition-transform duration-300"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 16 16"
+              fill="currentColor"
+              class="w-4 h-4"
+            >
+              <path
+                d="M8.75 3.75a.75.75 0 0 0-1.5 0v3.5h-3.5a.75.75 0 0 0 0 1.5h3.5v3.5a.75.75 0 0 0 1.5 0v-3.5h3.5a.75.75 0 0 0 0-1.5h-3.5v-3.5Z"
+              />
+            </svg>
+          </span>
+        </button>
+        <div
+          id="content-2"
+          class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out"
+        >
+          <div class="pb-5 text-sm text-slate-500">
+           To select an element from the DOM, use document.getElementById("id") to select by ID, document.querySelector("selector") to select the first matching element, or document.querySelectorAll("selector") to select all matching elements.
+          </div>
+        </div>
+      </div>
+
+      <!-- Accordion Item 3 -->
+      <div class="border-b border-slate-200">
+        <button
+          onclick="toggleAccordion(3)"
+          class="w-full flex justify-between items-center py-5 text-slate-800"
+        >
+          <span>What is event delegation in the context of the DOM, and Why is it usefull?</span>
+          <span
+            id="icon-3"
+            class="text-slate-800 transition-transform duration-300"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 16 16"
+              fill="currentColor"
+              class="w-4 h-4"
+            >
+              <path
+                d="M8.75 3.75a.75.75 0 0 0-1.5 0v3.5h-3.5a.75.75 0 0 0 0 1.5h3.5v3.5a.75.75 0 0 0 1.5 0v-3.5h3.5a.75.75 0 0 0 0-1.5h-3.5v-3.5Z"
+              />
+            </svg>
+          </span>
+        </button>
+        <div
+          id="content-3"
+          class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out"
+        >
+          <div class="pb-5 text-sm text-slate-500">
+           Event delegation in the DOM involves handling events on a parent element and dynamically determining the target element. This is useful for efficiently managing events on dynamically created or removed elements, as it avoids the need to attach event listeners to individual elements.
+          </div>
+        </div>
+      </div>
+      <!-- 4 -->
+      <div class="border-b border-slate-200">
+        <button
+          onclick="toggleAccordion(4)"
+          class="w-full flex justify-between items-center py-5 text-slate-800"
+        >
+          <span>How do you manipulate an elements attributes and styles using the DOM?</span>
+          <span
+            id="icon-4"
+            class="text-slate-800 transition-transform duration-300"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 16 16"
+              fill="currentColor"
+              class="w-4 h-4"
+            >
+              <path
+                d="M8.75 3.75a.75.75 0 0 0-1.5 0v3.5h-3.5a.75.75 0 0 0 0 1.5h3.5v3.5a.75.75 0 0 0 1.5 0v-3.5h3.5a.75.75 0 0 0 0-1.5h-3.5v-3.5Z"
+              />
+            </svg>
+          </span>
+        </button>
+        <div
+          id="content-4"
+          class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out"
+        >
+          <div class="pb-5 text-sm text-slate-500">
+            To manipulate elements' attributes and styles using the DOM, access the element using getElementById, querySelector, or querySelectorAll, then modify attributes using setAttribute, getAttribute, removeAttribute, and modify styles using style.propertyName, classList, or getComputedStyle.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="/blog.js"></script>
+  </body>
 </html>
