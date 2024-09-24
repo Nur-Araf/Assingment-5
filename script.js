@@ -44,19 +44,27 @@ let aidBalance = parseInt(aiBalance);
 
 function validAmount(inputId) {
   const input = document.getElementById(inputId).value;
+
+  // from Google thats fix 10bc Inputs
+  const isValidNumber = /^\d+$/.test(input);
+
+  if (!isValidNumber) {
+    my_modal_2.showModal();
+    return false;
+  }
+
   const donationAmount = parseInt(input);
 
   if (isNaN(donationAmount) || donationAmount <= 0) {
-    // alert("Please enter a valid donation amount.");
     my_modal_2.showModal();
     return false;
   }
 
   if (totalBalance < donationAmount) {
-    // alert("Insufficient Balance");
     my_modal_3.showModal();
     return false;
   }
+
   return donationAmount;
 }
 
