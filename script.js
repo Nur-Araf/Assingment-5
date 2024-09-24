@@ -76,9 +76,9 @@ function addHistory(donationAmount, placeId) {
   let date = new Date();
 
   const newElement = document.createElement("div");
-  newElement.innerHTML = `<div class="border-[1px] p-8 rounded-2xl mb-6">
-            <h1 class="font-bold text-xl pb-4">${donationAmount} ${heading}h</h1>
-            <p class="text-gray-700 font-light text-base">Date: ${date}</p>
+  newElement.innerHTML = `<div class="border-[1px] md:p-8 p-4 rounded-2xl md:mb-6 mb-3">
+            <h1 class="font-bold text-base md:text-xl pb-2 md:pb-4">${donationAmount} ${heading}h</h1>
+            <p class="text-gray-700 font-light  md:text-base text-sm">Date: ${date}</p>
         </div>`;
 
   historySection.appendChild(newElement);

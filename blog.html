@@ -20,38 +20,38 @@
   <body class="lexend">
     <nav class="sticky top-0 z-50">
       <div
-        class="flex items-center justify-between md:px-36 px-8 py-6 bg-[#F9F7F3]"
+        class="flex items-center justify-between md:px-36 px-4 md:py-6 py-3 bg-[#F9F7F3] backdrop-filter backdrop-blur-lg"
       >
         <div>
           <a
-            href="/blog.html"
-            class="bg-[#B4F461] px-8 py-3 font-semibold rounded-lg text-xl"
-            >Blog</a
-          >
-        </div>
-        <div class="flex items-center">
-          <img src="assets/logo.png" alt="Logo" />
-          <a
-            class="ml-2 font-semibold text-xl cursor-pointer"
             href="/index.html"
-            >Donate Bangladesh</a
+            class="bg-[#B4F461] md:px-8 px-4 md:py-3 py-2 font-semibold rounded-lg md:text-xl text-base"
+            >Home</a
           >
         </div>
+        <div class="md:flex items-center">
+          <div class="h-7 w-7 md:h-auto md:w-auto flex justify-center ml-[70px] md:ml-auto">
+          <img src="assets/logo.png" alt="Logo" />
+          </div>
+          <a class="ml-2 font-semibold md:text-xl text-base cursor-pointer" href="/index.html">Donate Bangladesh</a>
+        </div>
         <div class="flex items-center">
+          <div class="h-5 w-5 md:h-auto md:w-auto">
           <img src="assets/coin.png" alt="coin" />
-          <h1 class="ml-2 font-medium text-xl text-gray-700">
+          </div>
+          <h1 class="ml-2 font-medium md:text-xl text-base text-gray-700">
             <span id="balance">5500</span> BDT
           </h1>
         </div>
       </div>
     </nav>
 
-    <section class="p-1 md:px-36 px-8 mb-10 pb-4 mt-5 pt-5">
-      <h1 class="font-extrabold text-2xl mb-2 pb-2">Important FAQ</h1>
+    <section class="p-1 md:px-36 px-4 md:mb-10 mb-4 pb-4 md:pb-4 md:mt-5 mt-2 pt-2 md:pt-5">
+      <h1 class="md:font-extrabold font-bold text-xl md:text-2xl md:mb-2 pb-1 mb-1 md:pb-2">Important FAQ</h1>
       <div class="border-b border-slate-200">
         <button
           onclick="toggleAccordion(1)"
-          class="w-full flex justify-between items-center py-5 text-slate-800"
+          class="w-full flex justify-between items-center md:py-5 py-3 text-slate-800"
         >
           <span>What is the Document Object Model (DOM)?</span>
           <span

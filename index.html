@@ -15,67 +15,72 @@
   <body class="lexend">
     <nav class="sticky top-0 z-50">
       <div
-        class="flex items-center justify-between md:px-36 px-8 py-6 bg-[#F9F7F3]"
+        class="flex items-center justify-between md:px-36 px-4 md:py-6 py-3 bg-[#F9F7F3] backdrop-filter backdrop-blur-lg"
       >
         <div>
           <a
             href="/blog.html"
-            class="bg-[#B4F461] px-8 py-3 font-semibold rounded-lg text-xl"
+            class="bg-[#B4F461] md:px-8 px-4 md:py-3 py-2 font-semibold rounded-lg md:text-xl text-base"
             >Blog</a
           >
         </div>
-        <div class="flex items-center">
+        <div class="md:flex items-center">
+          <div class="h-7 w-7 md:h-auto md:w-auto flex justify-center ml-[70px] md:ml-auto">
           <img src="assets/logo.png" alt="Logo" />
-          <a class="ml-2 font-semibold text-xl cursor-pointer" href="/index.html">Donate Bangladesh</a>
+          </div>
+          <a class="ml-2 font-semibold md:text-xl text-base cursor-pointer" href="/index.html">Donate Bangladesh</a>
         </div>
         <div class="flex items-center">
+          <div class="h-5 w-5 md:h-auto md:w-auto">
           <img src="assets/coin.png" alt="coin" />
-          <h1 class="ml-2 font-medium text-xl text-gray-700">
+          </div>
+          <h1 class="ml-2 font-medium md:text-xl text-base text-gray-700">
             <span id="balance">5500</span> BDT
           </h1>
         </div>
       </div>
 
       <div
-        class="flex items-center justify-center gap-5 pt-16 pb-3 bg-gradient-to-b from-white/80 to-white/30 backdrop-filter backdrop-blur-lg"
+        class="flex items-center justify-center md:gap-5 gap-3 md:pt-16 pt-8 pb-3 bg-gradient-to-b from-white/80 to-white/30 backdrop-filter backdrop-blur-lg"
       >
         <button
           id="donate"
-          class="border-[1px] px-8 py-3 font-semibold rounded-lg text-xl selected"
+          class="border-[1px] md:px-8 px-4 md:py-3 py-2 font-semibold rounded-lg md:text-xl text-base selected"
         >
           Donate
         </button>
         <button
           id="history"
-          class="px-8 py-3 font-semibold rounded-lg text-xl border-[1px]"
+          class="md:px-8 px-4 md:py-3 py-2 font-semibold rounded-lg md:text-xl text-base border-[1px]"
         >
           History
         </button>
       </div>
     </nav>
 
-    <section class="p-1 md:px-36 px-8 mb-10 pb-4" id="donateSection">
+    <section class="p-1 md:px-36 px-4 md:mb-10 mb-5 pb-3 md:pb-4" id="donateSection">
 
-      <div class="mt-8">
-        <div class="border-[1px] grid grid-cols-2 p-8 rounded-2xl">
-          <div>
+      <div class="md:mt-8 mt-2">
+        <div class="border-[1px] grid md:grid-cols-2 md:p-8 p-4 rounded-2xl">
+          <div class="mb-4 md:mb-0">
             <img src="assets/noakhali.png" alt="float" />
           </div>
 
-          <div class="ml-8">
+          <div class="md:ml-8">
             <div
               class="bg-gray-200 rounded-lg px-4 py-3 inline-flex items-center"
-            >
+            > <div class="h-5 w-5 md:h-auto md:w-auto">
               <img src="assets/coin.png" alt="coin" />
-              <h2 class="text-base font-normal text-gray-700 ml-2">
+              </div>
+              <h2 class="md:text-base text-sm font-normal text-gray-700 ml-2">
                 <span id="noakhaiBalance">0</span> BDT
               </h2>
             </div>
 
-            <h1 class="font-bold text-xl my-4" id="noakhaliHeading">
+            <h1 class="font-bold text-base md:text-xl md:my-4 my-3" id="noakhaliHeading">
               Donate for Flood at Noakhali, Bangladesh
             </h1>
-            <p class="text-gray-700 font-light text-base mb-6">
+            <p class="text-gray-700 font-light text-sm md:text-base md:mb-6 mb-3">
               There is a large scale of floods in Bangladesh as well as in
               Noakhali.People are suffering from floods.There is no drinkable
               water and foods in Noakhali.So many children are dying due to
@@ -86,11 +91,11 @@
               name="donate"
               id="noakhaliInput"
               placeholder="Write your amount"
-              class="border-[1px] rounded-lg text-base font-light p-4 w-full"
+              class="border-[1px] rounded-lg text-sm md:text-base font-light p-2 md:p-4 w-full"
             />
             <div class="flex justify-center">
             <button
-              class="bg-[#B4F461] px-8 py-3 font-semibold rounded-lg text-xl mt-4"
+              class="bg-[#B4F461] px-4 md:px-8 md:py-3 py-2 font-semibold rounded-lg md:text-xl text-base md:mt-4 mt-2"
               id="btn"
               onclick="handleNouaBtn()"
             >
@@ -118,9 +123,9 @@
         </div>
       </div>
 
-      <div class="mt-8">
-        <div class="border-[1px] grid grid-cols-2 p-8 rounded-2xl">
-          <div class="">
+      <div class="md:mt-8 mt-2">
+        <div class="border-[1px] grid md:grid-cols-2 md:p-8 p-4 rounded-2xl">
+          <div class="mb-4 md:mb-0">
             <img
               src="assets/feni.png"
               alt="float"
@@ -128,20 +133,22 @@
             />
           </div>
 
-          <div class="ml-8">
+          <div class="md:ml-8">
             <div
               class="bg-gray-200 rounded-lg px-4 py-3 inline-flex items-center"
             >
+            <div class="h-5 w-5 md:h-auto md:w-auto">
               <img src="assets/coin.png" alt="coin" />
-              <h2 class="text-base font-normal text-gray-700 ml-2">
+              </div>
+              <h2 class="md:text-base text-sm font-normal text-gray-700 ml-2">
                 <span id="feniBalance">100</span> BDT
               </h2>
             </div>
 
-            <h1 class="font-bold text-xl my-4" id="feniHeading">
+            <h1 class="font-bold text-base md:text-xl md:my-4 my-3" id="feniHeading">
               Donate for Flood Relief in Feni, Bangladesh
             </h1>
-            <p class="text-gray-700 font-light text-base mb-6">
+            <p class="text-gray-700 font-light text-sm md:text-base md:mb-6 mb-3">
               No place for Home in feni.There is a large scale of floods in
               Bangladesh as well as in Feni.People are suffering from
               floods.There is no drinkable water and foods in Noakhali.So many
@@ -154,11 +161,11 @@
               name="donate"
               id="feniInput"
               placeholder="Write your amount"
-              class="border-[1px] rounded-lg text-base font-light p-4 w-full"
+              class="border-[1px] rounded-lg text-sm md:text-base font-light md:p-4 p-2 w-full"
             />
             <div class="flex justify-center">
             <button
-              class="bg-[#B4F461] px-8 py-3 font-semibold rounded-lg text-xl mt-4"
+              class="bg-[#B4F461] px-4 md:px-8 md:py-3 py-2 font-semibold rounded-lg md:text-xl text-base md:mt-4 mt-2"
               id="btn-1"
               onclick="handleFeniBtn()"
             >
@@ -170,9 +177,9 @@
         </div>
       </div>
 
-      <div class="mt-8">
-        <div class="border-[1px] grid grid-cols-2 p-8 rounded-2xl">
-          <div class="">
+      <div class="md:mt-8 mt-4">
+        <div class="border-[1px] grid md:grid-cols-2 md:p-8 p-4 rounded-2xl">
+          <div class="mb-4 md:mb-0">
             <img
               src="assets/quota-protest.png"
               alt="float"
@@ -180,20 +187,21 @@
             />
           </div>
 
-          <div class="ml-8">
+          <div class="md:ml-8">
             <div
               class="bg-gray-200 rounded-lg px-4 py-3 inline-flex items-center"
-            >
+            ><div class="h-5 w-5 md:h-auto md:w-auto">
               <img src="assets/coin.png" alt="coin" />
-              <h2 class="text-base font-normal text-gray-700 ml-2">
+              </div>
+              <h2 class="md:text-base text-sm font-normal text-gray-700 ml-2">
                 <span id="aidBalance">100</span> BDT
               </h2>
             </div>
 
-            <h1 class="font-bold text-xl my-4" id="aidHeading">
+            <h1 class="font-bold text-base md:text-xl md:my-4 my-3" id="aidHeading">
               Aid for Injured in the Quota Movement
             </h1>
-            <p class="text-gray-700 font-light text-base mb-6">
+            <p class="text-gray-700 font-light text-sm md:text-base md:mb-6 mb-3">
               In recent days, the Quota Movement has seen an unfortunate rise in
               injuries among participants. Efforts are now being made to provide
               immediate medical assistance and support for those affected.
@@ -207,12 +215,11 @@
               name="donate"
               id="aidInput"
               placeholder="Write your amount"
-              class="border-[1px] rounded-lg text-base font-light p-4 w-full"
+              class="border-[1px] rounded-lg text-sm md:text-base font-light md:p-4 p-2 w-full"
             />
             <div class="flex justify-center">
             <button
-              class="bg-[#B4F461] px-8 py-3 font-semibold rounded-lg text-xl mt-4"
-              id="btn-2"
+              class="bg-[#B4F461] px-4 md:px-8 md:py-3 py-2 font-semibold rounded-lg md:text-xl text-base md:mt-4 mt-2"
               onclick="handleAidBtn()"
             >
               Donate Now
@@ -224,13 +231,13 @@
       </div>
     </section>
 
-    <section class="p-1 md:px-36 px-8 hidden" id="historySection">
-      <!-- Default Values -->
-      <div class="border-[1px] p-8 rounded-2xl mb-6">
-        <h1 class="font-bold text-xl pb-4">
+    <section class="p-1 md:px-36 px-4 hidden" id="historySection">
+      <!-- //  Default Values  // -->
+      <div class="border-[1px] md:p-8 p-4 rounded-2xl md:mb-6 mb-3">
+        <h1 class="font-bold md:text-xl text-bse md:pb-4 pb-2">
           100 Taka is Donated for famine-2024 at Feni, Bangladesh
         </h1>
-        <p class="text-gray-700 font-light text-base">
+        <p class="text-gray-700 font-light md:text-base text-sm">
           Date: tue sep 27 2024 08:39:39 GMT+0600 (Bangladesh Standard Time)
         </p>
       </div>
