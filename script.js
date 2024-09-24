@@ -47,12 +47,14 @@ function validAmount(inputId) {
   const donationAmount = parseInt(input);
 
   if (isNaN(donationAmount) || donationAmount <= 0) {
-    alert("Please enter a valid donation amount.");
+    // alert("Please enter a valid donation amount.");
+    my_modal_2.showModal();
     return false;
   }
 
   if (totalBalance < donationAmount) {
-    alert("Insufficient Balance");
+    // alert("Insufficient Balance");
+    my_modal_3.showModal();
     return false;
   }
   return donationAmount;
@@ -112,7 +114,7 @@ function aidUpdateBalances() {
   document.getElementById("aidInput").value = "";
 }
 
-
+// ------ Add Event Listener with Onclick for not giving the modal call 2 times ----- //
 function handleNouaBtn() {
   if (validAmount("noakhaliInput")) {
     noakhaliUpdateBalances();

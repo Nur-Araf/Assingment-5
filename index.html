@@ -113,7 +113,42 @@
                 <h4 class="text-xl font-bold">Successfully</h4>
                 <div class="modal-action">
                   <form method="dialog">
-                    <button class="btn bg-slate-300 text-slate-500">Close confirmation</button>
+                    <button class="btn bg-slate-300 text-slate-500">Confirmed Close</button>
+                  </form>
+                </div>
+              </div>
+            </dialog>
+
+            <!-- for Invalid Input-->
+
+            <dialog id="my_modal_2" class="modal">
+              <div class="modal-box flex flex-col  items-center justify-center">
+                <h3 class="text-2xl font-extrabold mb-3">Failed!</h3>
+                <img src="assets/coin.png" alt="coin">
+                <p class="py-4 text-gray-500">
+                  Give a Valid Amount
+                </p>
+                <h4 class="text-xl font-bold">Try Again!</h4>
+                <div class="modal-action">
+                  <form method="dialog">
+                    <button class="btn bg-slate-300 text-slate-500">Close</button>
+                  </form>
+                </div>
+              </div>
+            </dialog>
+
+            <!-- Insufficient Balance -->
+            <dialog id="my_modal_3" class="modal">
+              <div class="modal-box flex flex-col  items-center justify-center">
+                <h3 class="text-2xl font-extrabold mb-3">Failed!</h3>
+                <img src="assets/coin.png" alt="coin">
+                <p class="py-4 text-gray-500">
+                  Not enough Balance
+                </p>
+                <h4 class="text-xl font-bold">Insufficient Balance!</h4>
+                <div class="modal-action">
+                  <form method="dialog">
+                    <button class="btn bg-slate-300 text-slate-500">Close</button>
                   </form>
                 </div>
               </div>
